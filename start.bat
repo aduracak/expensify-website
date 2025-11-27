@@ -1,3 +1,0 @@
-@echo off
-echo Starting Expensify Website...
-npm run dev
