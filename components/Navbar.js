@@ -6,6 +6,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Add background when scrolled down a bit
       setIsScrolled(window.scrollY > 20);
     };
 

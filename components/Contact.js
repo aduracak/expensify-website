@@ -21,13 +21,12 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission - replace with actual API call
+    // TODO: replace this with real API endpoint when backend is ready
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
       
-      // Reset success message after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
     }, 1500);
   };
@@ -158,7 +157,7 @@ export default function Contact() {
 
               {submitStatus === 'success' && (
                 <div className="bg-primary/20 border border-primary text-white px-4 py-3 rounded-lg text-center">
-                  Message sent successfully! We'll contact you soon.
+                  Message sent successfully! We&apos;ll contact you soon.
                 </div>
               )}
             </form>

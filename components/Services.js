@@ -1,4 +1,4 @@
-// Services data - easy to edit and maintain
+// All our services in one place - makes it easy to add/remove later
 const servicesData = [
   {
     id: 1,

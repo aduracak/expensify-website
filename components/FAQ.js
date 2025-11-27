@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-// FAQ data - easy to edit and maintain
+// FAQ questions and answers - just add more objects to expand
 const faqData = [
   {
     id: 1,

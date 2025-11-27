@@ -5,7 +5,7 @@ export default function About() {
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-dark">
           Who We Are
         </h2>
-        
+
         <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
           <p>
             Expensify is a team of passionate developers and designers focused on creating 

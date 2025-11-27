@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // Custom color palette for the brand
       colors: {
         primary: '#00C46B',
         accent: '#00E08A',

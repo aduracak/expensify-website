@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 
+// Different slogans to rotate through
+const slogans = [
+  'Business Agility',
+  'Digital Innovation', 
+  'Growth Solutions',
+  'Tech Excellence'
+];
+
 export default function Hero() {
-  const slogans = [
-    'Business Agility',
-    'Digital Innovation',
-    'Growth Solutions',
-    'Tech Excellence'
-  ];
 
   const [currentSloganIndex, setCurrentSloganIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
@@ -41,7 +43,7 @@ export default function Hero() {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [displayedText, isDeleting, currentSloganIndex, typingSpeed, slogans]);
+  }, [displayedText, isDeleting, currentSloganIndex, typingSpeed]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-dark via-[#0a1414] to-dark text-white overflow-hidden">
